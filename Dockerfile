@@ -20,4 +20,4 @@ COPY . .
 # Expose port 8501
 EXPOSE 8501
 # Launch app when container is run
-ENTRYPOINT ["streamlit", "run", "Home.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "Home.py", "--server.port=8501", "--server.address=0.0.0.0", " --server.maxUploadSize 10000"]
